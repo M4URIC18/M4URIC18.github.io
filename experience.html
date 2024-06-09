@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="./resources/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!------------------------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Signika&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-----Main Banner section ------>
+    <header id="header">
+        <div class="logo">
+            <img src="./resources/images/logo.jpg" alt="">
+        </div>
+        <nav>  
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li class="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+  
+    </header>
+<!------------------------------>
+    <nav>  
+      <a href="#mainbanner"><img title="Loneliness help service" id="logo" src="./resources/images/logo.jpg" alt=""></a>
+    </nav>
+<!------------------------------>
+    <main id="mainbanner">
+        <h1 class="h1-mid" >Experience</h1>
+    </main>
+<!------------------------------>
+
+
+<!---------banner-5 Hobbies----------->
+
+
+<!-------anner-6 Education-------->
+
+
+<!------------------------------>
+<section  id="team" class="banner7">
+    <h2>Programming Languages & Recen Projects</h2>
+    <div class="team1">
+      <img src="./resources/images/popup01.png" alt="" class="pop-img">
+      <h4>With JS <br>I created an interactive and user-friendly websites for a business </h4>
+    </div>
+    <div class="team2">
+      <img src="./resources/images/popup02.png" alt="" class="pop-img">
+      <h4>With C++<br> I learned the fundamentals of C++ and practiced by writing programs that solved various computational problems</h4>
+    </div>
+    <div class="team3">
+      <img src="./resources/images/popup03.png" alt="" class="pop-img">
+      <h4>With Python<br> I dedicated time to learn Python, drawn to its simplicity and versatility.</h4>
+    </div>
+    <div class="team4">
+      <img src="./resources/images/popup04.png" alt="" class="pop-img">
+      <h4>With HTML & CSS <br> I've created different websites, personal and school projects</h4>
+    </div>
+</section>
+
+<section class="popup-img">
+  <span>&times;</span>
+  <img src="./resources/images/popup01.jpg" alt=""> 
+
+</section>
+
+<script>
+  document.querySelectorAll(".banner7 img").forEach (image => {
+    //document.querySelector(".popup-img").style.display = "block";
+    image.onclick = () => {
+      document.querySelector(".popup-img").style.display = "block";
+      document.querySelector(".popup-img img").src = image.getAttribute('src');
+    }
+  });
+
+  document.querySelector(".popup-img span").onclick = () => {
+    document.querySelector(".popup-img").style.display = "none";
+  }
+</script>
+
+<!------------------------------>
+
+<div class="experience">
+    <h3 class="exp" >2020</h3>
+    <p class="exp" >
+        During the pandemic In 2020, I began teaching myself programming through the 
+        Codecademy platform. Starting with the basics, I gradually advanced my skills
+        by tackling various coding challenges and interactive lessons. Over time, I 
+        gained confidence and proficiency, enabling me to design websites and develop
+        small projects. My journey from a novice to a capable programmer highlights 
+        my dedication and the effectiveness of self-guided online education. <i>
+     <a target=”_blank” href="https://distriagricola-00.netlify.app/index.html#Nuestros-productos
+     ">here</a> </i>
+     </p>
+
+    <h3 class="exp" >2021</h3>
+    <p class="exp" >
+      I continued to expand my knowledge and skills by diving deeper into programming concepts and 
+      exploring more advanced topics. I dedicated time to learning new languages</p>
+    <img src="resources/images/snake.png" alt="">
+
+    <h3 class="exp" >2022-2023 </h3>
+    <p class="exp" >
+      I got into college to pursue a degree in Computer Science. Here, I explored more advanced
+      computer languages and concepts, expanding my knowledge.
+      These experiences pushed me to solve complex problems, collaborate with classmates, and continuously
+      refine my coding abilities, further solidifying my passion for the field.</p>
+</div>
+
+<!------------------------------>
+<section  class="banner8">
+  <div class="bn8">
+    <img class="bn8img" src="./resources/images/logo.jpg" alt="">
+  </div>
+
+  <div id="contact" class="contacts">
+    <h4>Contact me</h4>
+    <ul>
+      <li>
+        <li><img src="./resources/images/call.png" alt="">929 3862 427</li>
+        <li><img src="./resources/images/email.png" alt="">mauricio.001@stu.com</li>
+        <li><img src="./resources/images/location.png" alt="">New York, Brooklyn 423 4st</li>
+      </li>
+    </ul> 
+  </div>
+</section>
+
+<!------------------------------>
+    <footer>
+      <p>Imaginary website | Pictures taken
+        from unsplash.com & personal | the content of the website is based
+        on a school project.
+      </p>
+    </footer>
+</body>
+</html>
